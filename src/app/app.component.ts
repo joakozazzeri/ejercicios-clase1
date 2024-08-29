@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { BienvenidoComponent } from './components/bienvenido/bienvenido.component';
 import { LoginComponent } from './components/login/login.component';
 import { ErrorComponent } from './components/error/error.component';
@@ -8,7 +8,7 @@ import { ErrorComponent } from './components/error/error.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FormsModule, BienvenidoComponent, LoginComponent, ErrorComponent],
+  imports: [RouterOutlet, FormsModule, BienvenidoComponent, LoginComponent, ErrorComponent, RouterLink],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

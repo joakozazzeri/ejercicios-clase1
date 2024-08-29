@@ -6,7 +6,7 @@
 <input type="number" [(ngModel)]="edadDos"/>
 
 <p>Suma</p>
-<input type="number" value={{suma}} readonly>
+<input type="number" value={{suma}} readonly >
 
 
 <p>Promedio</p>
@@ -15,5 +15,12 @@
 <br>
 <button (click)="calcular()">Calcular</button>
 <button (click)="limpiar()">Limpiar cuadros de texto</button>
+
+<br>
+<br>
+<br>
+<button routerLink="login">Login</button>
+<button routerLink="bienvenido">Bienvenido</button>
+<button routerLink="error">Error</button>
 
 <router-outlet />
